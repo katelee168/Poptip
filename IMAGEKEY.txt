@@ -1,0 +1,9 @@
+Here's a key to all the images stored in the image folder:
+
+image5Zero.fig: The fifth image. It's a zero.
+
+image5ZeroBW.fig: The fifth image (it's a zero), in pure bw. 
+
+image1.fig: the first image (it's a 1). This is an example of skew
+
+image4BW.fig: the fourth image (it's a 4). Another example of skew
