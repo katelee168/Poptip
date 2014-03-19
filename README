@@ -1,27 +1,35 @@
 Katherine Lee
 Poptip take home assignment.
 
-
-1. (Real-Time) API Visualization
-
-2. Doccument Similarity
-
-3. Dinning Philosopher (Concurrency in Go)
-
-4. T9 in Go
-
-5. Natural Language Calculator
+I'm interested in: 
 
 6. Site Critique
 
 7. Kaggle Challenge
 
 
-I'm likely going to try the Kaggle Challenge (7) and the Site Critique (6) as they are most interesting to me.
-
 For the Kaggle Challenge, I've decided to take on the digit recognization.
 
 The following files are data from the site:
-train.csv, test.csv, knn_benchmark.R, knn_benchmark.csv, rf_benchmark.R, rf_benchmark.csv
+train.csv - 
+test.csv
+knn_benchmark.R
+knn_benchmark.csv - Contains the image index + the nubmer in the index. 
+rf_benchmark.R
+rf_benchmark.csv
 
+Here's how I'm likely going to proceed with the data.
+1. Visualize it--what exactly am I looking at.
+1.1 Pre-process images to get rid of noise
+1.2 (most likely) deskew images
+1.3 Potentially edge detect
+1.4 Potentially convert to pure b/w 
 
+2. Break the data into subsets by what number they are. 
+
+3. Explore different methods for analyzing the data: KPCA, Random Forests, Neural Networks.
+3.1 For KPCA, we could make all images a giant vector then cluster them. Then, take input data and project down into the cluster to see which cluster it is closest two. We could potentially explore different types of kernels, but I'll try a gaussian kernel first.
+3.2 Random forests:
+3.3 Neural Networks:
+
+4. Test the images + develop a ROC curve for different threshold levels (KPCA). 
