@@ -7,4 +7,4 @@ Wednesday, March 19, 2014:
 
 
 Thursday, March 20, 2014;
- - (1hr): Ran benchmarking file for dataset in R. In the mean time, started looking at Yahoo's website and jotting down some notes.
+ - (1.5hr): Ran benchmarking file for dataset in R. In the mean time, started looking at Yahoo's website and jotting down some notes + created two designs that can be found in the folder: "Yahoo"
