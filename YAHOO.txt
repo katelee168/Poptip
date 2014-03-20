@@ -1,0 +1,55 @@
+Redesigning Yahoo's website.
+
+Website functionalities: 
+ - Mail
+ - News
+ - Sports
+ - Finance
+ - Weather
+ - Games
+ - Groups
+ - Answers
+ - Screen
+ - Flickr
+ - Mobile
+ - ....even more
+
+Put on the front page:
+ - Mail
+ - News
+ - Finance
+ - Sports
+ - Weather
+Everything else will be links.
+
+Yahoo's wikipedia page says that the primary services the company is known for are Directory, Mail, News, Finance, Groups, Answers, and Search. 
+
+88% of revenue in 2009 came from search advertising ("where advertisers bid for search terms to display their ads on the search results"). 
+
+Their new website was launched in 2013 to be a more "personalized homepage" with widgets that the user could move around. 
+
+Here are some of my initial impressions looking at the site (after not having used it for a few years):
+ - The news appears to be the primary focus of the website (as the pictures really stand out)
+ - There are a _lot_ of products on the left hand side. It's a little overwhelming. I must admit, I like how Google only displays a few of the primary services then hides the rest in "more."
+ - Where did mail go?
+ - Weather and finances are very low on the page
+ - The ads are at the _very_ bottom of the page. Perhaps not effective if you put it there?
+ - Do we really need comics?
+
+I read over some comments from users on an article about Mayer (http://www.vanityfair.com/business/2014/01/marissa-mayer-yahoo-google). Here are some thoughts:
+ - Layout is confusing, and sometimes don't work when you click on them.
+ - Simpler is better
+ - Stuff won't load
+ - How to determine page views is messy at best.
+ - The email UI is really painful
+ 	- losing a lot of users
+ - Hides anouncements about changes in the application
+Some more comments from a different site (http://www.seroundtable.com/yahoo-home-page-design-poll-16557.html):
+ - uncustomizable
+ - hard to read
+ - not enough focus on mail
+ - page and calendar and weather does not update on its own so I have to reload the page constantly
+
+Working with Yahoo's website is interesting because we should take into consideration their business model + what services people use the most. 
+
+It seems as though people use yahoo primarily for mail and weather. However, Yahoo makes their money off of ads through their search bar. I'm not positive about why the news takes up such a large portion of the website. It seems the least relevant (unless people get all their news from Yahoo?). Perhaps the news section would be better relegated to just a few headlines in a corner. 
