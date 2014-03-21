@@ -1,10 +1,18 @@
 Daily log:
 
-I've been unexpectedly traveling from Saturday through Tuesday, so I started Wednesday.
+I've been unexpectedly traveling from Saturday through Tuesday, so I started 
+Wednesday.
 
 Wednesday, March 19, 2014:
- - (2hrs): Downloaded and set up dataset for digit recognition and some initial processing of data
+ - (2hrs): Downloaded and set up dataset for digit recognition and some 
+ initial processing of data
 
 
-Thursday, March 20, 2014;
- - (1.5hr): Ran benchmarking file for dataset in R. In the mean time, started looking at Yahoo's website and jotting down some notes + created two designs that can be found in the folder: "Yahoo"
+Thursday, March 20, 2014:
+ - (1.5hr): Ran benchmarking file for dataset in R
+ 	- started looking at Yahoo's website and jotting down some notes
+ 	- created two designs that can be found in the folder: "Yahoo"
+
+Friday, March 21, 2014:
+ - (1 hr): Set up the convolutions + started working on KPCA.
+ 	- Wrote up ML Techniques.txt
