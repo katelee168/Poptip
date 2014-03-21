@@ -1,3 +1,5 @@
+%% Pass in a dataset of images, choose an image to view, (0,1) bw, and (0,1) plot
+
 function [img] = view(data, image, bw, plot)
 
 %build a random image specified by "image"
