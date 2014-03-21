@@ -22,22 +22,32 @@ Put on the front page:
  - Weather
 Everything else will be links.
 
-Yahoo's Wikipedia page says that the primary services the company is known for are Directory, Mail, News, Finance, Groups, Answers, and Search. 
+Yahoo's Wikipedia page says that the primary services the company is known for 
+are Directory, Mail, News, Finance, Groups, Answers, and Search. 
 
-88% of revenue in 2009 came from search advertising ("where advertisers bid for search terms to display their ads on the search results"). 
+88% of revenue in 2009 came from search advertising ("where advertisers bid 
+for search terms to display their ads on the search results"). 
 
-Their new website was launched in 2013 to be a more "personalized homepage" with widgets that the user could move around. 
+Their new website was launched in 2013 to be a more "personalized homepage" 
+with widgets that the user could move around. 
 
-Here are some of my initial impressions looking at the site (after not having used it for a few years):
- - The news appears to be the primary focus of the website (as the pictures really stand out)
- - There are a _lot_ of products on the left hand side. It's a little overwhelming. I must admit, I like how Google only displays a few of the primary services then hides the rest in "more."
+Here are some of my initial impressions looking at the site (after not having 
+used it for a few years):
+ - The news appears to be the primary focus of the website (as the pictures 
+ really stand out)
+ - There are a _lot_ of products on the left hand side. It's a little 
+ overwhelming. I must admit, I like how Google only displays a few of the 
+ primary services then hides the rest in "more."
  - Where did mail go?
  - Weather and finances are very low on the page
- - The ads are at the _very_ bottom of the page. Perhaps not effective if you put it there?
+ - The ads are at the _very_ bottom of the page. Perhaps not effective if you 
+ put it there?
  - Do we really need comics?
- - The website design overall is inconsistent (Finance still looks like the old Yahool Mail used to. Yahoo mail looks a lot like Gmail does...)
+ - The website design overall is inconsistent (Finance still looks like the 
+ old Yahool Mail used to. Yahoo mail looks a lot like Gmail does...)
 
-I read over some comments from users on an article about Mayer (http://www.vanityfair.com/business/2014/01/marissa-mayer-yahoo-google). Here are some thoughts:
+I read over some comments from users on an article about Mayer (http://www.vanityfair.com/business/2014/01/marissa-mayer-yahoo-google). Here are some 
+thoughts:
  - Layout is confusing, and sometimes don't work when you click on them.
  - Simpler is better
  - Stuff won't load
@@ -49,15 +59,30 @@ Some more comments from a different site (http://www.seroundtable.com/yahoo-home
  - uncustomizable
  - hard to read
  - not enough focus on mail
- - page and calendar and weather does not update on its own so I have to reload the page constantly
+ - page and calendar and weather does not update on its own so I have to 
+ reload the page constantly
 
-Working with Yahoo's website is interesting because we should take into consideration their business model + what services people use the most. 
+Working with Yahoo's website is interesting because we should take into 
+consideration their business model + what services people use the most. 
 
-It seems as though people use yahoo primarily for mail and weather. However, Yahoo makes their money off of ads through their search bar. I'm not positive about why the news takes up such a large portion of the website (There is not a whole lot of difference between the news page and the home page. News seems the least relevant (unless people get all their news from Yahoo?)). Perhaps the news section would be better relegated to just a few headlines in a corner. 
+It seems as though people use yahoo primarily for mail and weather. However, 
+Yahoo makes their money off of ads through their search bar. I'm not positive 
+about why the news takes up such a large portion of the website (There is not 
+a whole lot of difference between the news page and the home page. News seems 
+the least relevant (unless people get all their news from Yahoo?)). Perhaps 
+the news section would be better relegated to just a few headlines in a 
+corner. 
 
-I know I've been talking a lot about Google, but that is perhaps the site that is most similar to Yahoo (not saying that Google looks too great either). Interestingly, they had (at one point, not sure if they still do) an iHome page that you could customize that looked a lot like Yahoo's home page right now. However, on the regular home page, the focus is it's search engine. 
+I know I've been talking a lot about Google, but that is perhaps the site that 
+is most similar to Yahoo (not saying that Google looks too great either). 
+Interestingly, they had (at one point, not sure if they still do) an iHome 
+page that you could customize that looked a lot like Yahoo's home page right 
+now. However, on the regular home page, the focus is it's search engine. 
 
-Though the majority of Yahoo's revenue comes from ads in searches, it would be tremendously difficult to compete with Google to be a search engine, and I think that the homepage of the website should convey what Yahoo's focus wants to be (which seems to be news right now). 
+Though the majority of Yahoo's revenue comes from ads in searches, it would be 
+tremendously difficult to compete with Google to be a search engine, and I 
+think that the homepage of the website should convey what Yahoo's focus wants 
+to be (which seems to be news right now). 
 
 Inital redesign thoughts: 
  - Focus on mail (1), weather (3), and search (2)
@@ -67,4 +92,5 @@ Inital redesign thoughts:
  	- Potentially pictures for news, inspiration from flip board?
  - Always more pictures, less words. 
  - Flat design
- - Header: all the other things, maybe as just icons, then mouse over to find out what they are?
+ - Header: all the other things, maybe as just icons, then mouse over to find 
+ out what they are?
