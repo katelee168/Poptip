@@ -1,0 +1,69 @@
+ML Techniques
+
+The ML techniques I'm most familiar with are as follows:
+
+1. KPCA (Kernel Principle Component Analysis)
+2. SVD (Singular Value Decomposition)
+3. Random Forests
+4. Neural Nets
+5. Cross-correlation
+
+I thought I'd write a little about how each works and the pros and cons of 
+using it for the given dataset
+
+1. KPCAs are traditionally used with unsupervised data. However, we can 
+probably still use them in this dataset as a means of clustering the different 
+images. To accomplish this, we can take each image (which is already in vector 
+form) and run a simple KPCA (and choose a specific kernel, likely the Gaussian 
+kernel as it's infinitely supported and generally friendly to work with) which 
+will take the vectors into a higher dimensional feature space, calculate the 
+eigenvectors in the feature space and allow us to draw non-linear decision 
+boundaries between the clusters in the original space. 
+
+This is adventageous over SVD's, which perform a similar trick (without the 
+kernels and instead produces eigenvectors that are ranked by how much 
+varaiance they capture--enabling demensionality reduction. Dimensionality 
+reduction may not be necessary here, though, as I don't think the competition 
+cares terribly much about runtime. If it does, then SVDs may be something to 
+explore), as it can form much tighter decision boundaries. 
+
+With the model built, we can take a new vector (testing image) into the 
+feature space through the kernel, project it onto the calculated eigenvector 
+basis and then us our (linear in the feature space) decision boundaries to 
+determine which cluster it is most likely in.
+
+I would use KPCAs for super accurate detection with little regard for speed. 
+
+2. SVDs are similar to KPCA with the exception of dimensionality reduction (
+and thus speed) that was mentioned before. The procedure would be similar (
+without the kernel).
+
+3. Random forests are really awesome. They are generally not as accurate as 
+SVDs or neural nets, but are much faster. 
+
+4. Neural nets
+
+5. Cross-correlations aren't really a ML technique, but it's often enough to
+get a good detection scheme. Not to mention, it's much faster than the other
+techniques listed here as it's much less computationally intensive. SVDs and 
+KPCAs for example need to find the eigenvectors for large datasets which is a 
+large time suck. 
+
+In a convolution, we match the images up together by shifting the two images 
+past each other to determine where the most "overlap" might occur. Then we 
+determine with which image the testing image has the most in common. In this 
+application, we would have to separate the training images into our individual 
+digits 0-9 then create a "representative" image corresponding to each of the 
+ten digits (most likely an average of sorts) and then convolute each testing 
+image with the ten training images to determine which matches up the closest. 
+
+To improve upon this, it might be possible to create an "average" of a subset 
+of each digit of the training images (a little like bootstrapping in RF). 
+Then convolute each of these new "averages" with the training image to spread
+out the variance more. 
+
+
+I'm going to use a convolution just for ease of coding rapidly. If I have 
+time, I'll also do a KPCA which may be more accurate. The benchmark uses a 
+random forest, but R kept crashing when I tried to run it--perhaps the 
+limitations of my poor laptop.
