@@ -8,7 +8,8 @@ knn_benchmark.csv - Contains the image index + the nubmer in the index.
 rf_benchmark.R
 rf_benchmark.csv
 
-Here's how I'm likely going to proceed with the data. (I used Matlab to look a the pictures then used R to do the processing)
+Here's how I'm likely going to proceed with the data. (I used Matlab to look a 
+the pictures then used R to do the processing)
 1. Visualize it--what exactly am I looking at. 
 	(done, created view.m to look at images)
 	1.1 Pre-process images to get rid of noise
@@ -18,10 +19,15 @@ Here's how I'm likely going to proceed with the data. (I used Matlab to look a t
 		(done, part of view.m)
 
 2. Break the data into subsets by what number they are. 
-3. Explore different methods for analyzing the data: KPCA, Random Forests, Neural Networks.
+3. Explore different methods for analyzing the data: KPCA, Random Forests, 
+Neural Networks.
 	3.0 Look at the bench mark files
-	3.1 For KPCA, we could make all images a giant vector then cluster them. Then, take input data and project down into the cluster to see which cluster it is closest two. We could potentially explore different types of kernels, but I'll try a gaussian kernel first.
+	3.1 For KPCA, we could make all images a giant vector then cluster them. 
+	Then, take input data and project down into the cluster to see which 
+	cluster it is closest two. We could potentially explore different types of 
+	kernels, but I'll try a gaussian kernel first.
 	3.2 Random forests:
 	3.3 Neural Networks:
 
-4. Test the images + develop a ROC curve for different threshold levels (KPCA). 
+4. Test the images + develop a ROC curve for different threshold levels (
+KPCA). 
