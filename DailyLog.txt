@@ -16,3 +16,7 @@ Thursday, March 20, 2014:
 Friday, March 21, 2014:
  - (1 hr): Set up the convolutions + started working on KPCA.
  	- Wrote up ML Techniques.txt
+
+Saturday, March 22, 2014:
+ - (1 hr): Started writing about deskewing images
+ 	- Have an implementation of KPCA. However, memory needs work. 
