@@ -1,0 +1,25 @@
+Digit file guide
+
+breakNumbers.m -- divide image files by what number is in them
+
+convolution.m -- perform a convolution on a single image, can be easily extended to perform convolutions on multiple
+
+initialTrainImages.R -- old file originally used to train images in R.
+
+kernel.m -- runs a gaussian kernel in matlab
+
+knn_benchmark.csv -- benchmark datafile
+
+knn_benchmark.R -- neural net from kaggle
+
+kpca.m -- function to generate KPCA model
+
+kpcarun.m -- use kpca.m to label data
+
+read.m -- read in data values
+
+rf_benchmark.csv -- benchmark datafile
+
+rf_benchmark.R -- original random forest algorithm
+
+view.m -- views a given image with a few selectors
