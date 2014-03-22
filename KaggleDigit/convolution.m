@@ -29,5 +29,15 @@ img = test(1,:);
 
 %% Convolute with each image
 
-c1 = xcorr(img, averaged(1,:));
-c2 = xcorr(img, averaged(2,:));
+cval = zeros(1,10);
+max = 0;
+maxIndex = 0;
+for i 1:10
+    cval(i) = mea(xcorr(img, averaged(i,:)),2);
+    if (cval(i)>max)
+        maxIndex = i;
+    end
+end
+
+maxIndex
+    
