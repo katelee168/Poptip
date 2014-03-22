@@ -8,6 +8,9 @@ test = csvread('data/test.csv',1,0);
 [testImages, dim] = size(test);
 [N, discarded] = size(train);
 
+%% create new dataset of averages
+
+
 %% build eigenvectors/values
 [values, vectors, K] = kpca(train(:,2:testPixels+1));
 

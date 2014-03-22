@@ -1,55 +1,55 @@
 %% Pass in a dataset to break into images for individual numbers. Returns 10 matricies with images for each number
-function [zero, one, two, three, four, five, six, seven, eight, nine] = breakNumbers(data)
+function [s0, s1, s2, s3, s4, s5, s6, s7, s8, s9] = breakNumbers(data)
 
 [images, pixels] = size(data);
 
 %initalize all the varaibles
-zero = zeros(1,pixels);
-one = zeros(1,pixels);
-two = zeros(1,pixels);
-three = zeros(1,pixels);
-four = zeros(1,pixels);
-five = zeros(1,pixels);
-six = zeros(1,pixels);
-seven = zeros(1,pixels);
-eight = zeros(1,pixels);
-nine = zeros(1,pixels);
+s0 = zeros(1,pixels);
+s1 = zeros(1,pixels);
+s2 = zeros(1,pixels);
+s3 = zeros(1,pixels);
+s4 = zeros(1,pixels);
+s5 = zeros(1,pixels);
+s6 = zeros(1,pixels);
+s7 = zeros(1,pixels);
+s8 = zeros(1,pixels);
+s9 = zeros(1,pixels);
 
 for i = 1:images
     test = data(i,1);
     switch  test
         case 0
-            zero = [zero; data(i,:)];
+            s0 = [s0; data(i,:)];
         case 1
-            one = [one; data(i,:)];
+            s1 = [s1; data(i,:)];
         case 2
-            two = [two; data(i,:)];
+            s2 = [s2; data(i,:)];
         case 3
-            three = [three; data(i,:)];
+            s3 = [s3; data(i,:)];
         case 4
-            four = [four; data(i,:)];
+            s4 = [s4; data(i,:)];
         case 5
-            five = [five; data(i,:)];
+            s5 = [s5; data(i,:)];
         case 6
-            six = [six; data(i,:)];
+            s6 = [s6; data(i,:)];
         case 7
-            seven = [seven; data(i,:)];
+            s7 = [s7; data(i,:)];
         case 8
-            eight = [eight; data(i,:)];
+            s8 = [s8; data(i,:)];
         case 9
-            nine = [nine; data(i,:)];
+            s9 = [s9; data(i,:)];
     end
 end
 
 %get rid of the rows of zeros
-zero = zero(2:size(zero),:);
-one = one(2:size(one),:);
-two = two(2:size(two),:);
-three = three(2:size(three),:);
-four = four(2:size(four),:);
-five = five(2:size(five),:);
-six = six(2:size(six),:);
-seven = seven(2:size(seven),:);
-eight = eight(2:size(eight),:);
-nine = nine(2:size(nine),:);
+s0 = s0(2:size(s0),:);
+s1 = s1(2:size(s1),:);
+s2 = s2(2:size(s2),:);
+s3 = s3(2:size(s3),:);
+s4 = s4(2:size(s4),:);
+s5 = s5(2:size(s5),:);
+s6 = s6(2:size(s6),:);
+s7 = s7(2:size(s7),:);
+s8 = s8(2:size(s8),:);
+s9 = s9(2:size(s9),:);
 
