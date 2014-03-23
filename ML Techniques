@@ -41,7 +41,39 @@ without the kernel).
 3. Random forests are really awesome. They are generally not as accurate as 
 SVDs or neural nets, but are much faster. 
 
-4. Neural nets
+Effectively, random forests first bootstrap the data (sample with replacement).
+These subsets together represent a “surrogate population” that approximates 
+the original population by dispersing the bias in the original sample. With 
+these newly formed datasets, we can bag the data.
+
+To bag the data means to create several subsets of the data then train a model 
+on these subsets. In the random forest algorithm, we create trees of these 
+subsets. 
+
+The difference between bagging and random forest is that bagging takes in one 
+variable: the size of the subsets of the sample, while the random forest 
+approach incorporates yet another: the number of predictors to search through 
+to find the best predictor to split the data so that the trees have as little 
+correlation as possible. This lends itself to an optimization problem built 
+into the random forest algorithm. 
+
+To classify a new input using a random forest, the algorithm runs the input 
+through each of the trees in the forest which each return a classification and 
+then returns the classification which was returned by the most number of 
+trees. 
+
+Random forests are generally really fast and pretty accurate. However, it's 
+more difficult to add new data to the random forest model (as you would have 
+to regenerate the model). That isn't really a concern in this application (and 
+is also true for the other models listed here).
+
+4. Neural nets are the least familiar algorithm to me in this list. My 
+understanding of them is that we pass in data, which activates different 
+"neurons" in the system that are transformed and adaptively weighted until the 
+output neuron is activiated. Then, the system returns the elected output. 
+
+This approach seems really awesome, and in the future I'd like to work more 
+with it. 
 
 5. Cross-correlations aren't really a ML technique, but it's often enough to
 get a good detection scheme. Not to mention, it's much faster than the other
@@ -63,7 +95,7 @@ Then convolute each of these new "averages" with the training image to spread
 out the variance more. 
 
 
-I'm going to use a convolution just for ease of coding rapidly. If I have 
-time, I'll also do a KPCA which may be more accurate. The benchmark uses a 
-random forest, but R kept crashing when I tried to run it--perhaps the 
-limitations of my poor laptop.
+I'm going to use a convolution just for ease of coding rapidly. Then generate 
+a KPCA depending on time remaining. The benchmark uses a random forest, but R 
+kept crashing when I tried to run it--perhaps the limitations of my poor 
+laptop.

@@ -1,5 +1,7 @@
 Digit file guide
 
+bootstrap.m -- create random samples of individual digits.
+
 breakNumbers.m -- divide image files by what number is in them
 
 convolution.m -- perform a convolution on a single image, can be easily extended to perform convolutions on multiple

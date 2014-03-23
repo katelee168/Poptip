@@ -20,3 +20,5 @@ Friday, March 21, 2014:
 Saturday, March 22, 2014:
  - (1 hr): Started writing about deskewing images
  	- Have an implementation of KPCA. However, memory needs work. 
+ - (2 hrs): Fixed up KPCA, still need to do detection accuracy analysis
+ 	- It currently generates output for 30 (could specify more) testing vectors using KPCA with a gaussian kernel (support = 100). More information is found in the ML techniques file.
