@@ -12,14 +12,34 @@
 
 %combine into new dataset
 averages = [b0; b1; b2; b3; b4; b5; b6; b7; b8; b9];
+[avgDim, dim] = size(averages);
 %% build eigenvectors/values
-[values, vectors, K] = kpca(averages);
+[values, vectors, Ktr] = kpca(averages, 10, 100);
 
 %% project test values
 
-for i = 1:1%testImages
-    for j = 1:N
-        kernelize = kernel(train(j,:), train(i,:),1);
+%kernelize = zeros(1,N);
+%for i = 1:1%testImages
+%    for j = 1:N
+%        kernelize(1,j) = kernel(train(j,:), train(i,:),1);
+%    end
+%    y = values'*(eye(N)-ones(N)/N)*(kernelize-K*(ones(N)/N));
+%end
+
+
+%%low dimensional projection of test points is obtained by projecting test
+%%kernel matrix onto first l eigenvectors extracted from training kernel
+%%matrix
+% test kernel matrix
+
+subTest = test(1:30,:);
+Ktt = zeros(30,avgDim);
+
+for i = 1:30
+    for j = 1:avgDim
+        Ktt(i,j) = kernel(averages(j,:),subTest(i,:),100);
     end
-    y = values'*(eye(N)-ones(N)/N)*(kernelize-K*(ones(N)/N));
 end
+
+Xtt = Ktt*(vectors');
+

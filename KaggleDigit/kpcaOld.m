@@ -7,26 +7,27 @@
 %%analysis: applications, implementation, and comparison), http://www.umiacs.umd.edu/labs/cvl/pirl/vikas/projects/cmsc878r_proj_slides_3.pdf
 %%and 
 
-function[values, vectors, Ktr] = kpca(train, eigs, sigma) 
+function[eigenvalues, eigenvectors, K] = kpca(train, test, dim) 
 
 [N, dim] = size(train);
+[n, dim] = size(test);
 
 % recenter
 for i = 1:N
     train(i,:) = train(i,:)-mean(train(i,:));
 end
 
-%train kernel matrix
-Ktr = zeros(N, N);
+% gaussian gram matrix
+K = zeros(N, N);
 
 for i = 1:N
     for j = 1:N
-        Ktr(i,j) = kernel(train(j,:),train(i,:),sigma);
+        K(i,j) = kernel(train(i,:),test(j,:),1);
     end
 end
 
 % modified gram matrix
-Ktilde = (eye(N) - (ones(N,N)/N))'*Ktr*(eye(N) - (ones(N,N)/N));
+Ktilde = (eye(N) - (ones(N,N)/N))'*K*(eye(N) - (ones(N,N)/N));
 
 % eigenvectors
 [eigenvectors, D] = eig(Ktilde);
@@ -34,21 +35,8 @@ Ktilde = (eye(N) - (ones(N,N)/N))'*Ktr*(eye(N) - (ones(N,N)/N));
 % pull off eigenvalues
 eigenvalues = sum(D,2);
 
+
 % normalize eigenvectors
 eigenvectors = normc(eigenvectors);
 
-% pull off max eigenvalues/vectors
-%top = zeros(1,dim);
-values = zeros(1,eigs);
-vectors = zeros(eigs,N);
-for i = 1:eigs
-    top = 1;
-    for j = 1:size(eigenvalues)
-        if(eigenvalues(top) < eigenvalues(j))
-            top = j;
-        end
-    end
-    values(i) = eigenvalues(top);
-    vectors(i,:) = eigenvectors(top,:);
-    eigenvalues(top) = 0;
 end
