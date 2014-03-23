@@ -32,6 +32,11 @@ Xtt = Ktt*(vectors');
 
 %% Project reference kernel
 y = [zeros(1,20) ones(1,20) (ones(1,20)*2)  (ones(1,20)*3) (ones(1,20)*4) (ones(1,20)*5) (ones(1,20)*6) (ones(1,20)*7) (ones(1,20)*8) (ones(1,20)*9)];
+[b0, b1, b2, b3, b4, b5, b6, b7, b8, b9] = bootstrap(s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, 20, 100);
+
+%combine into new dataset
+averages = [b0; b1; b2; b3; b4; b5; b6; b7; b8; b9];
+[avgDim, dim] = size(averages);
 
 for i = 1:avgDim
     for j = 1:avgDim
