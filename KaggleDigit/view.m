@@ -7,7 +7,7 @@ img = zeros(28,28);
 
 for i = 1:28,
     for j = 1:28,
-        img(i, j) = data(image,(i-1)*28+j+1);
+        img(i, j) = data(image,(i-1)*28+j);%this is with clean data
     end
 end
 

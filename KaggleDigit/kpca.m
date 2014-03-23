@@ -21,7 +21,7 @@ K = zeros(N, N);
 
 for i = 1:N
     for j = 1:N
-        K(i,j) = kernel(data(i,:),data(j,:));
+        K(i,j) = kernel(data(i,:),data(j,:),1);
     end
 end
 

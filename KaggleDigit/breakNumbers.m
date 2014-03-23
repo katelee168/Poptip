@@ -1,5 +1,5 @@
 %% Pass in a dataset to break into images for individual numbers. Returns 10 matricies with images for each number
-function [s0, s1, s2, s3, s4, s5, s6, s7, s8, s9] = breakNumbers(data)
+function [s0, s1, s2, s3, s4, s5, s6, s7, s8, s9] = breakNumbers(data, cleanData)
 
 [images, pixels] = size(data);
 
@@ -19,25 +19,25 @@ for i = 1:images
     test = data(i,1);
     switch  test
         case 0
-            s0 = [s0; data(i,:)];
+            s0 = [s0; cleanData(i,:)];
         case 1
-            s1 = [s1; data(i,:)];
+            s1 = [s1; cleanData(i,:)];
         case 2
-            s2 = [s2; data(i,:)];
+            s2 = [s2; cleanData(i,:)];
         case 3
-            s3 = [s3; data(i,:)];
+            s3 = [s3; cleanData(i,:)];
         case 4
-            s4 = [s4; data(i,:)];
+            s4 = [s4; cleanData(i,:)];
         case 5
-            s5 = [s5; data(i,:)];
+            s5 = [s5; cleanData(i,:)];
         case 6
-            s6 = [s6; data(i,:)];
+            s6 = [s6; cleanData(i,:)];
         case 7
-            s7 = [s7; data(i,:)];
+            s7 = [s7; cleanData(i,:)];
         case 8
-            s8 = [s8; data(i,:)];
+            s8 = [s8; cleanData(i,:)];
         case 9
-            s9 = [s9; data(i,:)];
+            s9 = [s9; cleanData(i,:)];
     end
 end
 
