@@ -1,0 +1,16 @@
+KPCA process
+(Some explanation to accompany the code)
+
+The current code reads in data, generates a bootstrapped average for each 
+digit and uses that to create a new dataset. With that information, it 
+generates the eigenvectors and eigenvalues (with a gaussian kernel of support 
+100) (note, this has not been optimized). We then project the testing data 
+onto these eigenvectors + eigenvalues and project the reference data onto the 
+eigenvectors and find the vector in the reference that is closest to the test 
+data and return the image of the reference data.
+
+There are some bugs in the code I'm still trying to iron out. Namely, the distance to the reference point is glitching and I'm not sure why it gives me all fives all the time. I think it could be because of the projection in the previous section for Xtt (the training data).
+
+Additionally, the code could be really helped by pre-processing (perhaps by 
+applying a thresholding value on the pixels and also deskewing the images). 
+Unfortunately, I ran out of time to implement these changes. 
