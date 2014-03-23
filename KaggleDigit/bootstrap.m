@@ -35,7 +35,7 @@ for j = 1:n
         randomindex = rand(1,10);
         % make each random index span the number of images
         for k = 1:10
-            randomindex(k) = int64(randomindex(k)*sizez(k)+1);
+            randomindex(k) = int64(randomindex(k)*(sizez(k)-1)+1);
         end
         b0(j,:) = b0(j,:) + (s0(randomindex(10),:)/100);
         b1(j,:) = b1(j,:) + (s1(randomindex(1),:)/100);

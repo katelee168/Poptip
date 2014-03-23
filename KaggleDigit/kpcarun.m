@@ -17,21 +17,7 @@ averages = [b0; b1; b2; b3; b4; b5; b6; b7; b8; b9];
 [values, vectors, Ktr] = kpca(averages, 10, 100);
 
 %% project test values
-
-%kernelize = zeros(1,N);
-%for i = 1:1%testImages
-%    for j = 1:N
-%        kernelize(1,j) = kernel(train(j,:), train(i,:),1);
-%    end
-%    y = values'*(eye(N)-ones(N)/N)*(kernelize-K*(ones(N)/N));
-%end
-
-
-%%low dimensional projection of test points is obtained by projecting test
-%%kernel matrix onto first l eigenvectors extracted from training kernel
-%%matrix
 % test kernel matrix
-
 subTest = test(1:30,:);
 Ktt = zeros(30,avgDim);
 
@@ -43,3 +29,14 @@ end
 
 Xtt = Ktt*(vectors');
 
+%% find max and return for each vector
+
+for i = 1:30
+    top = 1;
+    for j = 1:10
+        if(Xtt(i,j) < Xtt(i,top))
+            top = j;
+        end
+    end
+    disp(['I think the ', num2str(i),'th image is ', num2str(top)]);
+end
